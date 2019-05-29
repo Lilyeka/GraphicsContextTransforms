@@ -11,4 +11,7 @@ To illustrate, here’s code to draw our arrow repeatedly at several angles, piv
 
 Since the arrow will be drawn multiple times, I’ll start by encapsulating the drawing of the arrow as a UIImage. This is not merely to reduce repetition and make drawing more efficient; it’s also because we want the entire arrow to pivot, including the pattern stripes, and this is the simplest way to achieve that
 
-In our draw(_:) implementation, we draw the arrow image multiple times.
+In our draw(_:) implementation, we call function drawWithoutShadow() that draws the arrow image multiple times or drawWithShadow() that draws the arrow image multiple times with shadow
+
+![A](https://github.com/Lilyeka/GraphicsContextTransforms/blob/master/GraphicsContextTransforms/rotatedArrowsWithShadows.png "Drawing rotated")
+
