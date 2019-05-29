@@ -11,14 +11,4 @@ To illustrate, here’s code to draw our arrow repeatedly at several angles, piv
 
 Since the arrow will be drawn multiple times, I’ll start by encapsulating the drawing of the arrow as a UIImage. This is not merely to reduce repetition and make drawing more efficient; it’s also because we want the entire arrow to pivot, including the pattern stripes, and this is the simplest way to achieve that
 
-In our draw(_:) implementation, we draw the arrow image multiple times:
-override func draw(_ rect: CGRect) {
-    let con = UIGraphicsGetCurrentContext()!
-    self.arrow.draw(at:CGPoint(0,0))
-    for _ in 0..<3 {
-        con.translateBy(x: 20, y: 100)
-        con.rotate(by: 30 * .pi/180.0)
-        con.translateBy(x: -20, y: -100)
-        self.arrow.draw(at:CGPoint(0,0))
-    }
-}
+In our draw(_:) implementation, we draw the arrow image multiple times.
