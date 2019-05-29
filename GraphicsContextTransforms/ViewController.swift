@@ -12,9 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        initObjects()
     }
-
+    
+    func initObjects() {
+        let myArrows = MyArrows()
+        myArrows.frame = CGRect(x: 100, y: 100, width: 140, height: 140)
+        view.addSubview(myArrows)
+    }
 
 }
 
