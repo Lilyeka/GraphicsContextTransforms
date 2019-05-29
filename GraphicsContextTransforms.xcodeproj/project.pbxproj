@@ -13,6 +13,7 @@
 		610849B6229E7E6300D66E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610849B5229E7E6300D66E53 /* Assets.xcassets */; };
 		610849B9229E7E6300D66E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610849B7229E7E6300D66E53 /* LaunchScreen.storyboard */; };
 		610849C1229E7F3300D66E53 /* MyArrows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610849C0229E7F3300D66E53 /* MyArrows.swift */; };
+		610849C3229E879900D66E53 /* rotatedArrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 610849C2229E879900D66E53 /* rotatedArrows.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		610849B8229E7E6300D66E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		610849BA229E7E6300D66E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610849C0229E7F3300D66E53 /* MyArrows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArrows.swift; sourceTree = "<group>"; };
+		610849C2229E879900D66E53 /* rotatedArrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotatedArrows.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				610849B5229E7E6300D66E53 /* Assets.xcassets */,
 				610849B7229E7E6300D66E53 /* LaunchScreen.storyboard */,
 				610849BA229E7E6300D66E53 /* Info.plist */,
+				610849C2229E879900D66E53 /* rotatedArrows.png */,
 			);
 			path = GraphicsContextTransforms;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610849B9229E7E6300D66E53 /* LaunchScreen.storyboard in Resources */,
+				610849C3229E879900D66E53 /* rotatedArrows.png in Resources */,
 				610849B6229E7E6300D66E53 /* Assets.xcassets in Resources */,
 				610849B4229E7E5E00D66E53 /* Main.storyboard in Resources */,
 			);
