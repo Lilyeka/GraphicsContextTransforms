@@ -5,7 +5,8 @@ The base transform for a graphics context is already set for you when you obtain
 A rotate transform is particularly useful, allowing you to draw in a rotated orientation without any nasty trigonometry. However, it’s a bit tricky because the point around which the rotation takes place is the origin. This is rarely what you want, so you have to apply a translate transform first, to map the origin to the point around which you really want to rotate. But then, after rotating, in order to figure out where to draw, you will probably have to reverse your translate transform.
 To illustrate, here’s code to draw our arrow repeatedly at several angles, pivoting around the end of its tail.
 
-![Arrow](https://github.com/Lilyeka/https-github.com-Lilyeka-Gradients/blob/master/Gradients/arrow1.png "Arrow")
+![A](https://github.com/Lilyeka/GraphicsContextTransforms/blob/master/GraphicsContextTransforms/rotatedArrows.png "Drawing rotated")
+
 
 
 Since the arrow will be drawn multiple times, I’ll start by encapsulating the drawing of the arrow as a UIImage. This is not merely to reduce repetition and make drawing more efficient; it’s also because we want the entire arrow to pivot, including the pattern stripes, and this is the simplest way to achieve that
