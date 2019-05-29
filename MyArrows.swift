@@ -27,6 +27,11 @@ class MyArrows: UIView {
     }
 
     override func draw(_ rect: CGRect) {
+        //drawWithoutShadow()
+        drawWithShadow()
+    }
+    
+    func  drawWithoutShadow() {
         let con = UIGraphicsGetCurrentContext()!
         self.arrow.draw(at: CGPoint(x: 0, y: 0))
         for _ in 0..<3 {
@@ -37,6 +42,19 @@ class MyArrows: UIView {
         }
     }
     
+    func drawWithShadow() {
+        let con = UIGraphicsGetCurrentContext()!
+        con.setShadow(offset: CGSize(width: 7, height: 7), blur: 12.0)
+        //con.beginTransparencyLayer(auxiliaryInfo: nil)
+        self.arrow.draw(at: CGPoint(x: 0, y: 0))
+        for _ in 0..<3 {
+            con.translateBy(x: 20, y: 100)
+            con.rotate(by: 30 * .pi/180.0)
+            con.translateBy(x: -20, y: -100)
+            self.arrow.draw(at: CGPoint(x: 0, y: 0))
+        }
+        //con.endTransparencyLayer()
+    }
     
     func drawGradientArrowWithPatternUIKit() {
         // obtain the current graphics context
